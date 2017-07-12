@@ -1,14 +1,14 @@
 {
-    "name": "encore/laravel-admin",
-    "description": "laravel admin",
+    "name": "custom/encore/laravel-admin",
+    "description": "custom laravel admin",
     "type": "library",
-    "keywords": ["laravel", "admin", "grid", "chart", "form"],
-    "homepage": "https://github.com/z-song/laravel-admin",
+    "keywords": ["laravel", "admin", "grid", "chart", "form", "k-okina", "kahiro"],
+    "homepage": "https://github.com/k-okina/laravel-admin/",
     "license": "MIT",
     "authors": [
         {
-            "name": "zsong",
-            "email": "zosong@126.com"
+            "name": "k-okina",
+            "email": "okinakahiro@gmail.com"
         }
     ],
     "require": {
