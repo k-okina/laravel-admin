@@ -3,7 +3,6 @@
 namespace Encore\Admin\Form\Field;
 
 use Encore\Admin\Form;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\MessageBag;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
@@ -122,7 +121,7 @@ trait UploadField
             return session()->flash('error', $error);
         }
 
-        $this->storage = Storage::disk($disk);
+        $this->storage = $disk;
 
         return $this;
     }
@@ -243,7 +242,7 @@ trait UploadField
 
         $this->storage->put($target, file_get_contents($file->getRealPath()));
 
-        return $target;
+        return $this->storage->url($target);
     }
 
     /**

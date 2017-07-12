@@ -119,7 +119,7 @@ class File extends Field
 
         $this->destroy();
 
-        return $target;
+        return $this->storage->url($target);
     }
 
     /**
