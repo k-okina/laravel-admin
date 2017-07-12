@@ -3,12 +3,18 @@
     "description": "custom laravel admin",
     "type": "library",
     "keywords": ["laravel", "admin", "grid", "chart", "form", "k-okina", "kahiro"],
-    "homepage": "https://github.com/k-okina/laravel-admin/",
+    "homepage": "https://github.com/k-okina/laravel-admin",
     "license": "MIT",
     "authors": [
         {
             "name": "k-okina",
             "email": "okinakahiro@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/k-okina/laravel-admin"
         }
     ],
     "require": {
